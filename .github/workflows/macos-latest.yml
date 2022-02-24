@@ -22,6 +22,7 @@ jobs:
       - name: uses install-with-cpanm
         uses: perl-actions/install-with-cpanm@v1
         with:
+          args: --with-configure
           cpanfile: "cpanfile"
           sudo: false
       - name: perl -V
